@@ -1,8 +1,13 @@
-@import "tailwindcss"
+@import "tailwindcss";
+
 @config "../tailwind.config.ts";
 
 @layer base {
   :root {
+    --font-family-primary: Manifold DSA, "Bold";
+    --font-family-secondary: Manifold DSA, "Light";
+    --font-family-alternative: Manifold DSA, "Medium";
+
     --background: 0 0% 100%;
     --foreground: 224 71.4% 4.1%;
 

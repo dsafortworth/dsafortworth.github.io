@@ -3,18 +3,34 @@ import type { Config } from "tailwindcss";
 
 const config: Config = {
 	darkMode: ['class', 'dark'],
-	content: ["./src/**/*.{html,js,svelte,ts}"],
+	content: ["./src/**/*.{html,js,svelte,ts,css}"],
 	//safelist: ["dark"],
 	theme: {
 		container: {
 			center: true,
 			padding: "2rem",
 			screens: {
+                "sm": defaultTheme.screens.sm,
+                "md": defaultTheme.screens.md,
+                "lg": defaultTheme.screens.lg,
+                "xl": defaultTheme.screens.xl,
 				"2xl": "1400px"
 			}
 		},
 		extend: {
 			colors: {
+                uprising_pink: "#f4797e",
+                anarcho_grey: "#605c5c",
+                blush_pink: "#fbd2d4",
+                charcoal: "#3b3838",
+                dissent_silver: "#c1c0bf",
+                gnd_green: "#129760",
+                indusrial_grey: "#8c8989",
+                liberation_pink: "#f7a5a9",
+                panther_black: "#080a0a",
+                rosa_red: "#f04c53",
+                rose_red: "#ec1f27",
+                snow_white: "#fbfdfd",
 				border: "hsl(var(--border) / <alpha-value>)",
 				input: "hsl(var(--input) / <alpha-value>)",
 				ring: "hsl(var(--ring) / <alpha-value>)",
