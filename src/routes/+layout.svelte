@@ -64,6 +64,7 @@
                     </p>
                 </div>
             </div>
+            {@render children()}
         </main>
 
         <!-- Footer -->
