@@ -1,6 +1,5 @@
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 import adapter from '@sveltejs/adapter-cloudflare';
-import type { Config } from '@sveltejs/kit';
 
 export default {
 	// Consult https://svelte.dev/docs/integrations#preprocessors
@@ -15,7 +14,8 @@ export default {
 			routes: {
 				include: ['/*'],
 				exclude: ['<all>']
-			}
+			},
+            config: 'wrangler.jsonc'
 		}),
 
 		// Set the output directory to ./dist at the root of the project
@@ -25,4 +25,4 @@ export default {
 			$lib: './src/lib'
 		}
 	}
-} satisfies Config;
+}

@@ -8,8 +8,14 @@ export default defineConfig({
 		tailwindcss(),
 		sveltekit()
 	],
+    server:{
+        fs: {
+            strict: true,
+            allow: [process.cwd()]
+        }
+    },
 	test: {
-		workspace: [
+		projects: [
 			{
 				extends: './vite.config.ts',
 				plugins: [svelteTesting()],
